@@ -1,3 +1,4 @@
 {
-  "model": "haiku"
+  "model": "haiku",
+  "alwaysThinkingEnabled": false
 }
