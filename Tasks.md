@@ -1,7 +1,7 @@
 
 ## Today
 
-- [ ]
+- [ ] Edit the zsh command to create worktree separate from starting agent
 - [ ]
 - [ ]
 
@@ -9,8 +9,8 @@
 
 - [ ]
 - [ ]
-- [ ]
-- [ ]
+- [ ] Explore skills marketplace
+- [ ] cancel claude on iphone and subscribe on web
 
 ## Backlog
 
