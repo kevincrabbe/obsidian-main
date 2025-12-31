@@ -107,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 214.5
   },
   "right": {
     "id": "030756585822d951",
@@ -212,15 +212,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "bb50aadc24fe5dbf",
+  "active": "1498e18fc5857b30",
   "lastOpenFiles": [
-    "Tasks.md",
-    "Welcome.md",
-    "test.md",
-    "Ideas/Ideas.md",
-    "Ideas/Idea generation hueristics.md",
+    "Ideas/ideas/person-audio-convos.md",
+    "Ideas/ideas/n8n-feedback-tool.md",
+    "Ideas/ideas/auto-book-builder-for-audible.md",
+    "Ideas/ideas/fine-tuning-ui-to-jsonl.md",
+    "Ideas/ideas/watch-movies-with-strangers.md",
+    "Ideas/ideas/autoblogger.md",
+    "Ideas/ideas/public-speaking-coach.md",
+    "Ideas/ideas/chat-with-llm-about-coming-up-with-new-affirmations.md",
+    "Ideas/ideas/generate-audiobooks-buy-tokens-tokens-unlock-chapters.md",
+    "Ideas/ideas/google-docs-agents-commenting.md",
+    "Ideas/ideas/spa-discover.md",
+    "Ideas/ideas/rizz-app-but-better.md",
+    "Ideas/ideas/for-the-book-writer-tool-all-a-chapter-writer-needs-to-know-is-if-what-it-is-behind-and-in-front.md",
+    "Ideas/ideas/artlist-ai-copy.md",
+    "Ideas/ideas/detect-what-people-are-using-zapier-to-do-other-stuff.md",
+    "Ideas/ideas/llm-based-data-seeding-tool.md",
+    "Ideas/ideas/scenariosai.md",
+    "Ideas/ideas/job-postings.md",
+    "Ideas/ideas/add-a-tool-that-keeps-track-of-startup-ideas-in-a-sqlite-db.md",
+    "Ideas/ideas/vision-board.md",
+    "Ideas/ideas/x-auto-posting-using-your-personality.md",
+    "Ideas/ideas/crap-tool-that-tells-you-best-thing-to-unit-test.md",
+    "Ideas/ideas/labeling-locations.md",
+    "Ideas/ideas/tool-platform.md",
+    "Ideas/ideas/affirmation-app-for-more-immediate-support.md",
+    "Ideas/ideas/linkedin-networking-platform-with-interaction-pointsscore.md",
+    "Ideas/ideas",
     "Ideas",
-    "Pear/Founder Discovery Pipeline.md",
     "Ideas.csv",
     "Pear"
   ]
