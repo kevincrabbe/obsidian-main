@@ -1,8 +1,4 @@
-# Design Doc: Founder Discovery Pipeline
 
-**Author:** Engineering Team
-**Status:** Draft
-**Created:** 2025-01-15
 
 ---
 

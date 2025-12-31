@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Idea generation hueristics.md",
+                "file": "Ideas/Ideas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Idea generation hueristics"
+              "title": "Ideas"
             }
           }
         ],
@@ -200,8 +200,11 @@
   },
   "active": "2f83a12295de2bc4",
   "lastOpenFiles": [
+    "Ideas/Idea generation hueristics.md",
+    "Ideas/Ideas.md",
+    "Ideas",
     "Pear/Founder Discovery Pipeline.md",
-    "Idea generation hueristics.md",
+    "Ideas.csv",
     "test.md",
     "Pear",
     "Welcome.md"
