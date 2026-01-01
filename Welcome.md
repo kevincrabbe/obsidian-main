@@ -17,3 +17,18 @@ items:
     due: 2026-04-15
 
 ```
+
+
+```json
+[
+  {"name": "Alice", "score": 10},
+  {"name": "[]Bob", "score": 7},
+  {"name": "Cara", "score": 9},
+  {"name": "fda", "score": 9}
+]
+```
+
+| Name | Age | City   |
+| ---- | --- | ------ |
+| Doe  | 22  | Berlin |
+| Pan  | 34  | Mumbai |

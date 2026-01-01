@@ -1,0 +1,11 @@
+{
+  "id": "json-table-query",
+  "name": "JSON Table Query",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Query and render tables from JSON datasets embedded in your notes. Write queries in jtable blocks and see live table results.",
+  "author": "Claude",
+  "authorUrl": "https://claude.ai",
+  "helpUrl": "https://github.com/anthropics/claude-code",
+  "isDesktopOnly": false
+}

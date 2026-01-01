@@ -1,3 +1,5 @@
 [
-  "dataview"
+  "dataview",
+  "json-table-query",
+  "json-table"
 ]

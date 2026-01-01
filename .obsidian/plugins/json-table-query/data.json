@@ -1,0 +1,12 @@
+{
+  "enableJsExecution": false,
+  "jsExecutionWarningShown": false,
+  "enableDataCache": false,
+  "dataCacheSizeEntries": 50,
+  "cacheInvalidationMs": 60000,
+  "showTableBorders": true,
+  "alternateRowColors": true,
+  "sortableHeaders": false,
+  "showErrorDetails": true,
+  "showQueryLogsInDev": false
+}

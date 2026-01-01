@@ -1,0 +1,31 @@
+{
+  "name": "json-table-query",
+  "version": "1.0.0",
+  "description": "Query and render tables from JSON datasets embedded in Obsidian notes",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "watch": "node esbuild.config.mjs watch"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "json",
+    "table",
+    "query",
+    "dataview"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "builtin-modules": "^5.0.0",
+    "esbuild": "0.13.12",
+    "obsidian": "latest",
+    "tslib": "2.4.0",
+    "typescript": "4.7.4"
+  }
+}

@@ -1,7 +1,7 @@
 
 ## Today
 
-- [ ] Edit the zsh command to create worktree separate from starting agent
+- [x] Edit the zsh command to create worktree separate from starting agent
 - [ ]
 - [ ]
 

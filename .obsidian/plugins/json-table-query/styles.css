@@ -1,0 +1,191 @@
+/* JSON Table Query Plugin Styles */
+
+/* Table wrapper and container */
+.jtq-table-wrapper {
+  margin: 1em 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--background-primary);
+}
+
+.jtq-table-title {
+  margin: 0.5em 0.5em 0 0.5em;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+/* Table styling */
+.jtq-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  border: 1px solid var(--divider-color);
+}
+
+.jtq-table thead {
+  background-color: var(--background-secondary);
+  position: sticky;
+  top: 0;
+}
+
+.jtq-header-row {
+  border-bottom: 2px solid var(--divider-color);
+}
+
+.jtq-header-cell {
+  padding: 0.75em;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-normal);
+  border-right: 1px solid var(--divider-color);
+  user-select: none;
+}
+
+.jtq-header-cell:last-child {
+  border-right: none;
+}
+
+/* Table rows */
+.jtq-data-row {
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.jtq-row-even {
+  background-color: var(--background-primary);
+}
+
+.jtq-row-odd {
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+}
+
+.jtq-data-row:hover {
+  background-color: var(--interactive-hover);
+}
+
+/* Table cells */
+.jtq-data-cell {
+  padding: 0.5em 0.75em;
+  border-right: 1px solid var(--divider-color);
+  color: var(--text-normal);
+  word-break: break-word;
+  max-width: 400px;
+  white-space: pre-wrap;
+}
+
+.jtq-data-cell:last-child {
+  border-right: none;
+}
+
+/* Empty state */
+.jtq-empty-row {
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.jtq-empty-cell {
+  padding: 2em 0.75em;
+  text-align: center;
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* Footer */
+.jtq-table-footer {
+  padding: 0.5em 0.75em;
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--divider-color);
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+/* Error panel */
+.jtq-error-panel {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: var(--background-modifier-error);
+  border: 1px solid var(--text-error);
+  border-radius: 4px;
+  color: var(--text-error);
+}
+
+.jtq-error-title {
+  margin: 0 0 0.5em 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-error);
+}
+
+.jtq-error-item {
+  margin: 0.5em 0;
+  line-height: 1.5;
+}
+
+.jtq-error-item strong {
+  font-weight: 600;
+}
+
+.jtq-error-code {
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.85em;
+}
+
+.jtq-error-context {
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  overflow-x: auto;
+}
+
+.jtq-error-context code {
+  font-family: monospace;
+  font-size: 0.85em;
+  color: var(--text-error);
+}
+
+.jtq-error-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0.5em 0;
+}
+
+/* Query block styling (optional) */
+.jtable {
+  /* Placeholder for query block styling */
+}
+
+/* Dark mode support */
+.theme-dark .jtq-table-wrapper {
+  background: var(--background-primary);
+}
+
+.theme-dark .jtq-row-odd {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.theme-dark .jtq-error-panel {
+  background-color: rgba(220, 38, 38, 0.1);
+  border-color: var(--text-error);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .jtq-table {
+    font-size: 0.8em;
+  }
+
+  .jtq-data-cell {
+    padding: 0.35em 0.5em;
+    max-width: 200px;
+  }
+
+  .jtq-header-cell {
+    padding: 0.5em;
+  }
+}
