@@ -184,11 +184,26 @@ export default class JsonTableQueryPlugin extends Plugin {
       }
 
       this.app.vault.read(activeFile).then((content) => {
-        // Extract JSON blocks - look for next json block after this query
-        const jsonBlockPattern = /```json\n([\s\S]*?)\n```/g;
-        const matches = Array.from(content.matchAll(jsonBlockPattern));
+        // Find the source query in the file to determine its position
+        // This helps us match queries to their corresponding JSON blocks
+        const jtableBlockPattern = /```jtable\n([\s\S]*?)\n```/g;
+        const jtableMatches = Array.from(content.matchAll(jtableBlockPattern));
 
-        if (matches.length === 0) {
+        // Find which jtable query we are (by matching source)
+        let queryIndex = -1;
+        const normalizedSource = source.trim();
+        for (let i = 0; i < jtableMatches.length; i++) {
+          if (jtableMatches[i][1].trim() === normalizedSource) {
+            queryIndex = i;
+            break;
+          }
+        }
+
+        // Find all JSON blocks with their positions
+        const jsonBlockPattern = /```json\n([\s\S]*?)\n```/g;
+        const jsonMatches = Array.from(content.matchAll(jsonBlockPattern));
+
+        if (jsonMatches.length === 0) {
           errors.push({
             type: "data",
             message: "No JSON data block found in this file",
@@ -198,8 +213,11 @@ export default class JsonTableQueryPlugin extends Plugin {
           return;
         }
 
-        // Use the first valid JSON block
-        const match = matches[0];
+        // Use the JSON block at the same index as the query
+        // This ensures each query uses its corresponding JSON block
+        const matchIndex = queryIndex >= 0 && queryIndex < jsonMatches.length ? queryIndex : 0;
+        const match = jsonMatches[matchIndex];
+
         if (!match || !match[1]) {
           errors.push({
             type: "data",
@@ -234,6 +252,8 @@ export default class JsonTableQueryPlugin extends Plugin {
         if (this.settings.showQueryLogsInDev) {
           console.log("JSON Table Query executed", {
             query,
+            queryIndex,
+            matchIndex,
             inputRows: extractResult.data.length,
             outputRows: execResult.data.length,
           });

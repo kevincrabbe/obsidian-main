@@ -10,6 +10,7 @@ Query the next JSON block to display specific columns.
 fields: [name, score]
 ```
 
+# JSON
 ```json
 [
   {"name": "Alice", "score": 40, "grade": "A"},
@@ -23,7 +24,8 @@ fields: [name, score]
   {"name": "Bob", "score": 7, "grade": "B"},
   {"name": "lala", "score": 7, "grade": "B"},
   {"name": "bloom", "score": 7, "grade": "B"},
-  {"name": "cum", "score": 7, "grade": "B"}
+  {"name": "duh", "score": 7, "grade": "B"},
+  {"name": "hmm", "score": 7, "grade": "B"}
   
 ]
 ```
@@ -47,7 +49,8 @@ where:
   {"name": "Alice", "score": 10, "grade": "A"},
   {"name": "Bob", "score": 7, "grade": "B"},
   {"name": "Cara", "score": 9, "grade": "A"},
-  {"name": "David", "score": 6, "grade": "C"}
+  {"name": "David", "score": 6, "grade": "C"},
+  {"name": "lol", "score": 6, "grade": "C"}
 ]
 ```
 

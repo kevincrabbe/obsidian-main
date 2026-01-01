@@ -766,9 +766,19 @@ var JsonTableQueryPlugin = class extends import_obsidian.Plugin {
         return;
       }
       this.app.vault.read(activeFile).then((content) => {
+        const jtableBlockPattern = /```jtable\n([\s\S]*?)\n```/g;
+        const jtableMatches = Array.from(content.matchAll(jtableBlockPattern));
+        let queryIndex = -1;
+        const normalizedSource = source.trim();
+        for (let i = 0; i < jtableMatches.length; i++) {
+          if (jtableMatches[i][1].trim() === normalizedSource) {
+            queryIndex = i;
+            break;
+          }
+        }
         const jsonBlockPattern = /```json\n([\s\S]*?)\n```/g;
-        const matches = Array.from(content.matchAll(jsonBlockPattern));
-        if (matches.length === 0) {
+        const jsonMatches = Array.from(content.matchAll(jsonBlockPattern));
+        if (jsonMatches.length === 0) {
           errors.push({
             type: "data",
             message: "No JSON data block found in this file",
@@ -777,7 +787,8 @@ var JsonTableQueryPlugin = class extends import_obsidian.Plugin {
           ErrorPanel.render(errors, container);
           return;
         }
-        const match = matches[0];
+        const matchIndex = queryIndex >= 0 && queryIndex < jsonMatches.length ? queryIndex : 0;
+        const match = jsonMatches[matchIndex];
         if (!match || !match[1]) {
           errors.push({
             type: "data",
@@ -807,6 +818,8 @@ var JsonTableQueryPlugin = class extends import_obsidian.Plugin {
         if (this.settings.showQueryLogsInDev) {
           console.log("JSON Table Query executed", {
             query,
+            queryIndex,
+            matchIndex,
             inputRows: extractResult.data.length,
             outputRows: execResult.data.length
           });
