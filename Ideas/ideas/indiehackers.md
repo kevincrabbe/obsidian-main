@@ -1,5 +1,0 @@
----
-name: Indiehackers
----
-
-# Indiehackers

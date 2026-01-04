@@ -1,1 +1,0 @@
-* "Considering just"

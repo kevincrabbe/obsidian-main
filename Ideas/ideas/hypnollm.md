@@ -1,5 +1,0 @@
----
-name: Hypnollm
----
-
-# Hypnollm
